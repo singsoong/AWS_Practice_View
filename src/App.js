@@ -6,7 +6,7 @@ function App() {
   const list = data.map((item) => <p key={item.id}>{item.name}</p>);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/select")
+      .get("15.164.218.250:3000/select")
       .then(function (response) {
         console.log(response.data);
         setData(response.data);
